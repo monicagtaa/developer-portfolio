@@ -2,56 +2,303 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monica Garcia-Torres | Developer Portfolio</title>
+  <link rel="stylesheet" href="./new-styles.css" />
+  <script src="https://kit.fontawesome.com/ee93733d35.js" crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
-    <header>
-        <nav>
-            <div id="name">Monica Garcia-Tores</div>
-            <div id="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Project</a>
-                <a href="#">Get in Touch</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="top-panel">
-            <div class="card" id="card-1">
-                <div class="box">#1</div>
-                <div class="box">#2</div>
-            </div>
-        </div>
-        <div id="bottom-panel">
-            <h3>Look for Good Pic</h3>
-            <p>
-                dis parturient montes, nascetur ridiculus mus. Praesent imperdiet in
-                nibh a sodales. Vivamus tristique nisl quis nunc posuere tempus. Nam
-                molestie, nisi sit amet condimentum scelerisque, lectus ante feugiat
-                justo, at semper odio erat vulputate quam. Etiam ornare, ante faucibus
-                sodales pulvinar, eros massa feugiat leo, ac suscipit tellus mi a
-                nisl. Vivamus est felis, condimentum vel velit a, efficitur blandit
-                diam. Donec semper lectus eu condimentum fermentum. Integer sagittis
-                urna faucibus magna vestibulum, eu vestibulum quam hendrerit. Donec
-                mollis, nisi varius feugiat maximus, enim magna convallis leo, vel
-                tincidunt urna nulla eget justo. Nam nec sapien a ligula consequat
-                commodo. Nam vehicula lacinia nunc, at varius libero. Phasellus mauris
-                metus, vestibulum at rutrum in, gravida ut neque. Fusce pharetra nibh
-                ac blandit lacinia. Nam vehicula lacinia nunc, at varius libero.
-                Phasellus mauris metus, vestibulum at rutrum in, gravida ut neque.
-                Fusce pharetra nibh ac blandit lacinia.
-            </p>
-        </div>
-    </main>
 
+  <header>
+    <nav class="nav__bar">
+      <a id="logo" href="">MGTaa</a>
+      <div class="nav__bar__mid">
+        <a class="nav__bar__mid--sep" href="#"> About </a>
+        <a class="nav__bar__mid--sep" href="#"> Portfolio </a>
+        <!-- <div class="nav__bar__mid--sep"> -->
+        <p>
+          <button class="button" data-modal="modalOne">Get In Touch</button>
+        </p>
+        <!-- <a id="GetInTouch" href=""> Get In Touch </a> -->
+        <!-- </div> -->
+      </div>
+
+      <ul class="nav__bar__social">
+        <a href="https://www.linkedin.com/in/monica-garcia-torres-frm-90a9b010/">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/monicagt/">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section with Who I am and a pic in the middle -->
+    <section class="face">
+      <div class="face__rightSide">
+        <h1>Data Visualization</h1>
+        <h9>Developer specialized in data visualization design</h9>
+        <button type="button" onclick="alert('Error Message: This feature is under development')"class="scroll">Scroll Down</button>
+      </div>
+
+      <div class="face__image">
+        <h2 class="face__image__title">Software Engineer</h2>
+        <div class="face__image__pic"></div>
+      </div>
+
+      <div class="face__leftSide">
+        <h1>CODE</h1>
+        <h9>Financial software developer</h9>
+        <button type="button" onclick="alert('Error Message: This feature is under development')"class="scroll">Scroll Down</button>
+      </div>
+
+    </section>
+
+    <!-- Section of Technical Skills -->
+    <section class="skills">
+      <h1 class="skills__desc">Skills</h1>
+      <div id="skills__desc--word">
+        <h7>My passion is to automate and visualize data by creating software and APIs to collect, clean, and activate
+          customers' data.
+        </h7>
+        <p>
+          Empower your teams and clients with data!
+        </p>
+      </div>
+      <div>
+        <ul class="skills__list">
+          <li class="skills__list__icon">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>GIT</p>
+          </li>
+          <li class="skills__list__icon" >
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>GIT</p>
+          </li>
+          <li class="skills__list__icon">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>GIT</p>
+          </li>
+          <li class="skills__list__icon">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>GIT</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section My Projects -->
+    <section class="projects">
+      <h5></h5>
+      <div class="project_gallery">
+        <div>
+          <img src="" alt="">
+          <p>PROJECT 1</p>
+        </div>
+        <div>
+          <img src="" alt="">
+          <p>PROJECT 2</p>
+        </div>
+        <div>
+          <img src="" alt="">
+          <p>PROJECT 3</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Section style+div+script are for the Get In Touch Popup form -->
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 8;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      margin: 50px auto;
+      border: 1px solid #999;
+      width: 60%;
+    }
+
+    h2,
+    p {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #999;
+    }
+
+    span {
+      color: #666;
+      display: block;
+      padding: 0 0 5px;
+    }
+
+    form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5;
+      background: #eee;
+    }
+
+    input,
+    textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    button:hover {
+      background: #2371a0;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button.button {
+      background: none;
+      margin: 10px;
+      /* border-color: #39ff14;
+      border-style: solid; */
+      outline: #39ff14 3px solid;
+      color: #39ff14;
+      /* width: 15%; */
+      height: 100%;
+      /* padding: 5px; */
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button.button:hover {
+      /* border-bottom: #39ff14 1px solid; */
+      color: #FF10F0;
+    }
+  </style>
+
+  <div id="modalOne" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <a class="close">&times;</a>
+        <form action="/">
+          <h2>Send me an email</h2>
+          <div>
+            <input class="fname" type="text" name="name" placeholder="Full name" />
+            <input type="text" name="name" placeholder="Email" />
+            <input type="text" name="name" placeholder="Phone number" />
+            <input type="text" name="name" placeholder="Website" />
+          </div>
+          <span>Message</span>
+          <div>
+            <textarea rows="4"></textarea>
+          </div>
+          <button type="Send email" href="/">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let modalBtns = [...document.querySelectorAll(".button")];
+    modalBtns.forEach(function (btn) {
+      btn.onclick = function () {
+        let modal = btn.getAttribute("data-modal");
+        document.getElementById(modal).style.display = "block";
+      };
+    });
+    let closeBtns = [...document.querySelectorAll(".close")];
+    closeBtns.forEach(function (btn) {
+      btn.onclick = function () {
+        let modal = btn.closest(".modal");
+        modal.style.display = "none";
+      };
+    });
+    window.onclick = function (event) {
+      if (event.target.className === "modal") {
+        event.target.style.display = "none";
+      }
+    };
+  </script>
+  <!-- finishes the section of Get In Touch Popup form -->
+
+  <footer> 
+      <!--  --<div>
+        <a class="transition" href="">© 2022 Monica Garcia-Torres</a>
+      </div>
+      <div class="footer__left">
+        <a class="nav__bar__mid--sep" href="#"> About </a>
+        <a class="nav__bar__mid--sep" href="#"> Portfolio </a>
+        -- <div class="nav__bar__mid--sep"> -->
+        <!-- <p class="nav__bar__mid--button">
+          <button class="button" data-modal="modalOne">Get In Touch</button>
+        </p>
+      </div>> -->
+      <nav class="nav__bar">
+        <a class="transition" href="">© 2022 Monica Garcia-Torres</a>
+        <div class="nav__bar__mid">
+          <a class="nav__bar__mid--sep" href="#"> About </a>
+          <a class="nav__bar__mid--sep" href="#"> Portfolio </a>
+          <!-- <div class="nav__bar__mid--sep"> -->
+          <p>
+            <button class="button" data-modal="modalOne">Get In Touch</button>
+          </p>
+          <!-- <a id="GetInTouch" href=""> Get In Touch </a> -->
+          <!-- </div> -->
+        </div>
+  
+        <!-- <ul class="nav__bar__social">
+          <a href="https://www.linkedin.com/in/monica-garcia-torres-frm-90a9b010/">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/monicagt/">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+        </ul> -->
+      </nav>
+
+  </footer>
 
 
 
